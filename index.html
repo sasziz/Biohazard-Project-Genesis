@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>The New Cave - Setup Guide</title>
+<style>
+body{margin:0;font-family:Arial,system-ui,sans-serif;background:#080b12;color:#f2f5ff;line-height:1.6}
+main{max-width:980px;margin:auto;padding:28px 16px 60px} header,.card{background:#121826;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px;margin:16px 0}
+header{background:linear-gradient(135deg,#211735,#10251d)} h1{font-size:44px;margin:0 0 8px} h3{color:#e4e9ff} p,li{color:#a8b3c7} strong{color:white} a{color:#b89cff}
+.btn{display:inline-block;background:#8b5cf6;color:white;text-decoration:none;font-weight:bold;padding:12px 16px;border-radius:12px;margin:8px 8px 0 0}
+.server,pre{background:#0b1020;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px;overflow:auto;color:#dbeafe}
+.warn{border-left:5px solid #ef4444} .ok{border-left:5px solid #22c55e} .note{border-left:5px solid #f59e0b}
+code{background:#20283a;padding:2px 6px;border-radius:6px;color:#dbeafe} .pills span{display:inline-block;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:7px 10px;margin:5px;background:rgba(255,255,255,.05)}
+</style></head><body><main>
+<header><h1>The New Cave</h1><p><strong>Liminal Industries setup guide</strong></p>
+<div class="pills"><span>Minecraft Java 1.20.1</span><span>Forge 47.4.13</span><span>Liminal Industries 1.19.3</span><span>Voice chat enabled</span><span>Offline skins supported</span></div>
+<a class="btn" href="REPLACE_WITH_GITHUB_RELEASE_MODPACK_ZIP_LINK">Download Modpack</a><a class="btn" href="#join">Server Address</a></header>
+
+<section class="card warn"><h2>Before you start</h2><ul>
+<li>You need the exact same modpack version as the server.</li><li>Do not add random extra mods.</li>
+<li>Use Minecraft <strong>1.20.1</strong>, Forge <strong>47.4.13</strong>, and Java 17.</li>
+<li>Offline users should not keep changing usernames or their inventory/progress can look reset.</li></ul></section>
+
+<section class="card"><h2>1. Download the modpack</h2><ol>
+<li>Click <strong>Download Modpack</strong> above.</li><li>Download <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>The file is about <strong>64.9 MB</strong>.</li><li>Keep it as a zip. Most launchers import it directly.</li></ol></section>
+
+<section class="card"><h2>2. Official Minecraft account setup</h2>
+<h3>Prism Launcher</h3><ol><li>Open Prism Launcher.</li><li>Click <strong>Add Instance</strong>.</li><li>Choose <strong>Import</strong>.</li><li>Select <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>Wait for it to install/download everything.</li><li>Launch the instance.</li><li>Add the server address below.</li></ol>
+<h3>CurseForge App</h3><ol><li>Open CurseForge App.</li><li>Go to Minecraft.</li><li>Click <strong>Import</strong> or <strong>Import Profile</strong>.</li><li>Select <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>Wait for it to create the profile.</li><li>Press Play.</li><li>Add the server address below.</li></ol></section>
+
+<section class="card"><h2>3. Offline / unofficial setup - SKlauncher recommended</h2><p>For offline/alternative launcher users, <strong>SKlauncher is recommended</strong>.</p>
+<h3>Try this first: import the zip directly</h3><ol><li>Open SKlauncher.</li><li>Go to the modpacks/instances/installations area.</li><li>Choose the option to import/add a modpack.</li><li>Select <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>Let SKlauncher install everything.</li><li>Launch the modpack.</li><li>Add the server address below.</li></ol>
+<div class="card note"><h3>If SKlauncher import fails</h3><p>Install/import the pack in Prism Launcher or CurseForge first, launch it once, then copy the completed instance files into a SKlauncher Forge 1.20.1 / 47.4.13 installation.</p></div>
+<h3>Fallback copy method</h3><ol><li>Import the zip in Prism or CurseForge.</li><li>Launch it once so all mods/configs download.</li><li>Open that installed modpack folder.</li><li>In SKlauncher, create a Minecraft 1.20.1 Forge 47.4.13 installation.</li><li>Open the SKlauncher installation folder.</li><li>Copy folders like <code>mods</code>, <code>config</code>, <code>defaultconfigs</code>, <code>kubejs</code>, <code>resourcepacks</code>, and <code>shaderpacks</code> if they exist.</li><li>Launch from SKlauncher.</li></ol></section>
+
+<section class="card ok" id="join"><h2>4. Join the server</h2><p>Server address:</p><div class="server">thenewcave.ddns.net:24467</div>
+<ol><li>Open the modpack.</li><li>Click Multiplayer.</li><li>Add Server.</li><li>Name: <code>The New Cave</code></li><li>Address: <code>thenewcave.ddns.net:24467</code></li><li>Join.</li></ol>
+<h3>Voice chat</h3><p>Press <code>V</code> in-game. Make sure Minecraft has microphone permission.</p></section>
+
+<section class="card"><h2>5. Offline skins</h2><p>After joining, use:</p><pre>/skin set mojang Username</pre><p>Example:</p><pre>/skin set mojang Notch</pre><p>If it does not update:</p><pre>/skin refresh</pre><p>Or leave and rejoin.</p></section>
+
+<section class="card"><h2>6. Common fixes</h2>
+<h3>“Incompatible FML modded server” but I can still join</h3><p>Ignore it if you can join and play. It usually means the server has an extra server-side mod.</p>
+<h3>Missing mods / mod mismatch</h3><p>Delete the instance and import the newest zip again.</p><h3>SKlauncher import failed</h3><p>Use the fallback copy method above.</p><h3>Game crashes before opening</h3><p>Use Java 17, Minecraft 1.20.1, and Forge 47.4.13.</p><h3>Bad FPS</h3><p>Lower render distance, turn off shaders, close background apps, and allocate more RAM if your PC has enough.</p></section>
+
+<section class="card warn"><h2>Rules</h2><ul><li>No griefing.</li><li>No stealing.</li><li>No cheating/xray.</li><li>Do not spam voice chat.</li><li>Do not crash or lag the server on purpose.</li></ul></section>
+</main></body></html>
