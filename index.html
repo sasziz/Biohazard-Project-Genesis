@@ -1,45 +1,73 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>The New Cave - Setup Guide</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The New Cave — Biohazard Setup Guide</title>
 <style>
-body{margin:0;font-family:Arial,system-ui,sans-serif;background:#080b12;color:#f2f5ff;line-height:1.6}
-main{max-width:980px;margin:auto;padding:28px 16px 60px} header,.card{background:#121826;border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px;margin:16px 0}
-header{background:linear-gradient(135deg,#211735,#10251d)} h1{font-size:44px;margin:0 0 8px} h3{color:#e4e9ff} p,li{color:#a8b3c7} strong{color:white} a{color:#b89cff}
-.btn{display:inline-block;background:#8b5cf6;color:white;text-decoration:none;font-weight:bold;padding:12px 16px;border-radius:12px;margin:8px 8px 0 0}
-.server,pre{background:#0b1020;border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px;overflow:auto;color:#dbeafe}
-.warn{border-left:5px solid #ef4444} .ok{border-left:5px solid #22c55e} .note{border-left:5px solid #f59e0b}
-code{background:#20283a;padding:2px 6px;border-radius:6px;color:#dbeafe} .pills span{display:inline-block;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:7px 10px;margin:5px;background:rgba(255,255,255,.05)}
-</style></head><body><main>
-<header><h1>The New Cave</h1><p><strong>Liminal Industries setup guide</strong></p>
-<div class="pills"><span>Minecraft Java 1.20.1</span><span>Forge 47.4.13</span><span>Liminal Industries 1.19.3</span><span>Voice chat enabled</span><span>Offline skins supported</span></div>
-<a class="btn" href="https://github.com/sasziz/liminal-industries-smp-guide/releases/download/V1/Liminal.Industries-1.19.3.zip">Download Modpack</a><a class="btn" href="#join">Server Address</a></header>
+:root{--bg:#070b0a;--card:#111816;--text:#f3fff8;--muted:#a9b9b0;--accent:#22c55e;--danger:#ef4444;--warning:#f59e0b;--border:rgba(255,255,255,.13);--code:#07110d}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,system-ui,sans-serif;background:radial-gradient(circle at top left,rgba(34,197,94,.20),transparent 35%),radial-gradient(circle at bottom right,rgba(132,204,22,.12),transparent 30%),var(--bg);color:var(--text);line-height:1.65}
+main{max-width:1020px;margin:0 auto;padding:32px 18px 64px}header,.card{background:rgba(17,24,22,.92);border:1px solid var(--border);border-radius:20px;padding:22px;margin:16px 0;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+header{padding:42px 24px;background:linear-gradient(135deg,rgba(34,197,94,.18),rgba(239,68,68,.08)),rgba(17,24,22,.92)}h1{font-size:clamp(2rem,5vw,4rem);margin:0 0 8px;line-height:1.05}h3{color:#eaffef;margin-top:24px}p,li{color:var(--muted)}strong{color:var(--text)}a{color:#86efac}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}.pills span{display:inline-block;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:8px 11px;background:rgba(255,255,255,.05);color:var(--text);font-size:.92rem}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent),#15803d);color:white;text-decoration:none;font-weight:800;padding:12px 16px;border-radius:13px;margin:8px 8px 0 0;border:1px solid rgba(255,255,255,.14)}.btn.secondary{background:rgba(255,255,255,.08)}
+.server,pre{background:var(--code);border:1px solid rgba(255,255,255,.12);border-radius:13px;padding:14px;overflow:auto;color:#dcfce7;word-break:break-word}code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:7px;color:#dcfce7}
+.warn{border-left:5px solid var(--danger)}.ok{border-left:5px solid var(--accent)}.note{border-left:5px solid var(--warning)}footer{text-align:center;color:#7e8d84;margin-top:30px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>The New Cave</h1>
+<p><strong>Biohazard: Project Genesis setup guide</strong></p>
+<div class="pills">
+<span>Minecraft Java 1.20.1</span><span>Forge 47.4.0</span><span>Biohazard: Project Genesis</span><span>Voice chat enabled</span><span>Offline skins supported</span>
+</div>
+<a class="btn" href="https://github.com/sasziz/liminal-industries-smp-guide/releases/latest">Download Modpack</a>
+<a class="btn secondary" href="#join">Server Address</a>
+</header>
 
-<section class="card warn"><h2>Before you start</h2><ul>
-<li>You need the exact same modpack version as the server.</li><li>Do not add random extra mods.</li>
-<li>Use Minecraft <strong>1.20.1</strong>, Forge <strong>47.4.13</strong>, and Java 17.</li>
-<li>Offline users should not keep changing usernames or their inventory/progress can look reset.</li></ul></section>
+<section class="card warn"><h2>Old Liminal pack is no longer used</h2><p>The server changed to <strong>Biohazard: Project Genesis</strong>. Delete or ignore the old Liminal Industries instance and install the new pack from this page.</p></section>
+
+<section class="card"><h2>Before you start</h2><ul>
+<li>Use <strong>Minecraft 1.20.1</strong>, <strong>Forge 47.4.0</strong>, and <strong>Java 17</strong>.</li>
+<li>Use the exact Biohazard modpack zip from the download page.</li>
+<li>Do not add random extra mods.</li>
+<li>Offline users should keep the same username or inventory/progress can look reset.</li>
+</ul></section>
 
 <section class="card"><h2>1. Download the modpack</h2><ol>
-<li>Click <strong>Download Modpack</strong> above.</li><li>Download <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>The file is about <strong>64.9 MB</strong>.</li><li>Keep it as a zip. Most launchers import it directly.</li></ol></section>
+<li>Click <strong>Download Modpack</strong> above.</li>
+<li>On the GitHub release page, download the Biohazard modpack <code>.zip</code> from <strong>Assets</strong>.</li>
+<li>Keep it as a zip file. Most launchers import it directly.</li>
+</ol><p>If the release page shows multiple files, download the newest Biohazard client/modpack zip, not the old Liminal zip.</p></section>
 
 <section class="card"><h2>2. Official Minecraft account setup</h2>
-<h3>Prism Launcher</h3><ol><li>Open Prism Launcher.</li><li>Click <strong>Add Instance</strong>.</li><li>Choose <strong>Import</strong>.</li><li>Select <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>Wait for it to install/download everything.</li><li>Launch the instance.</li><li>Add the server address below.</li></ol>
-<h3>CurseForge App</h3><ol><li>Open CurseForge App.</li><li>Go to Minecraft.</li><li>Click <strong>Import</strong> or <strong>Import Profile</strong>.</li><li>Select <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>Wait for it to create the profile.</li><li>Press Play.</li><li>Add the server address below.</li></ol></section>
+<h3>Prism Launcher</h3><ol><li>Open Prism Launcher.</li><li>Click <strong>Add Instance</strong>.</li><li>Choose <strong>Import</strong>.</li><li>Select the downloaded Biohazard modpack zip.</li><li>Wait for Prism to install/download everything.</li><li>Launch the instance.</li><li>Add the server address below.</li></ol>
+<h3>CurseForge App</h3><ol><li>Open CurseForge App.</li><li>Go to Minecraft.</li><li>Click <strong>Import</strong> or <strong>Import Profile</strong>.</li><li>Select the downloaded Biohazard modpack zip.</li><li>Wait for the profile to be created.</li><li>Press Play.</li><li>Add the server address below.</li></ol>
+</section>
 
-<section class="card"><h2>3. Offline / unofficial setup - SKlauncher recommended</h2><p>For offline/alternative launcher users, <strong>SKlauncher is recommended</strong>.</p>
-<h3>Try this first: import the zip directly</h3><ol><li>Open SKlauncher.</li><li>Go to the modpacks/instances/installations area.</li><li>Choose the option to import/add a modpack.</li><li>Select <code>Liminal Industries-1.19.3(1).zip</code>.</li><li>Let SKlauncher install everything.</li><li>Launch the modpack.</li><li>Add the server address below.</li></ol>
-<div class="card note"><h3>If SKlauncher import fails</h3><p>Install/import the pack in Prism Launcher or CurseForge first, launch it once, then copy the completed instance files into a SKlauncher Forge 1.20.1 / 47.4.13 installation.</p></div>
-<h3>Fallback copy method</h3><ol><li>Import the zip in Prism or CurseForge.</li><li>Launch it once so all mods/configs download.</li><li>Open that installed modpack folder.</li><li>In SKlauncher, create a Minecraft 1.20.1 Forge 47.4.13 installation.</li><li>Open the SKlauncher installation folder.</li><li>Copy folders like <code>mods</code>, <code>config</code>, <code>defaultconfigs</code>, <code>kubejs</code>, <code>resourcepacks</code>, and <code>shaderpacks</code> if they exist.</li><li>Launch from SKlauncher.</li></ol></section>
+<section class="card"><h2>3. Offline / unofficial setup — SKlauncher recommended</h2>
+<p>For offline or alternative launcher users, <strong>SKlauncher is recommended</strong>.</p>
+<h3>Try this first: import the zip directly</h3><ol><li>Open SKlauncher.</li><li>Go to the modpacks / instances / installations area.</li><li>Choose the option to import or add a modpack.</li><li>Select the downloaded Biohazard modpack zip.</li><li>Let SKlauncher install everything.</li><li>Launch the modpack.</li><li>Add the server address below.</li></ol>
+<section class="card note"><h3>If SKlauncher import fails</h3><p>Install/import the pack in Prism Launcher or CurseForge first, launch it once, then copy the completed instance files into a SKlauncher Forge 1.20.1 / 47.4.0 installation.</p></section>
+</section>
 
-<section class="card ok" id="join"><h2>4. Join the server</h2><p>Server address:</p><div class="server">thenewcave.ddns.net:24467</div>
-<ol><li>Open the modpack.</li><li>Click Multiplayer.</li><li>Add Server.</li><li>Name: <code>The New Cave</code></li><li>Address: <code>thenewcave.ddns.net:24467</code></li><li>Join.</li></ol>
-<h3>Voice chat</h3><p>Press <code>V</code> in-game. Make sure Minecraft has microphone permission.</p></section>
+<section class="card ok" id="join"><h2>4. Join the server</h2><p>Server address:</p><div class="server">thenewcave.ddns.net:24467</div><ol><li>Open the Biohazard modpack.</li><li>Click <strong>Multiplayer</strong>.</li><li>Click <strong>Add Server</strong>.</li><li>Name: <code>The New Cave</code></li><li>Address: <code>thenewcave.ddns.net:24467</code></li><li>Join.</li></ol>
+<h3>Voice chat</h3><p>Voice chat works. Press <code>V</code> in-game. Make sure Minecraft has microphone permission.</p></section>
 
 <section class="card"><h2>5. Offline skins</h2><p>After joining, use:</p><pre>/skin set mojang Username</pre><p>Example:</p><pre>/skin set mojang Notch</pre><p>If it does not update:</p><pre>/skin refresh</pre><p>Or leave and rejoin.</p></section>
 
 <section class="card"><h2>6. Common fixes</h2>
-<h3>“Incompatible FML modded server” but I can still join</h3><p>Ignore it if you can join and play. It usually means the server has an extra server-side mod.</p>
-<h3>Missing mods / mod mismatch</h3><p>Delete the instance and import the newest zip again.</p><h3>SKlauncher import failed</h3><p>Use the fallback copy method above.</p><h3>Game crashes before opening</h3><p>Use Java 17, Minecraft 1.20.1, and Forge 47.4.13.</p><h3>Bad FPS</h3><p>Lower render distance, turn off shaders, close background apps, and allocate more RAM if your PC has enough.</p></section>
+<h3>Missing mods / mod mismatch</h3><p>You are probably using the old Liminal instance or the wrong Biohazard version. Delete the instance and import the newest zip again.</p>
+<h3>Game crashes before opening</h3><p>Use Java 17, Minecraft 1.20.1, and Forge 47.4.0.</p>
+<h3>SKlauncher import failed</h3><p>Use the fallback copy method above.</p>
+<h3>Bad FPS</h3><p>Lower render distance, turn off shaders, close background apps, and allocate more RAM if your PC has enough.</p>
+<h3>Voice chat does not work</h3><p>Press <code>V</code>, check microphone input, and allow microphone permission in Windows privacy settings.</p>
+</section>
 
 <section class="card warn"><h2>Rules</h2><ul><li>No griefing.</li><li>No stealing.</li><li>No cheating/xray.</li><li>Do not spam voice chat.</li><li>Do not crash or lag the server on purpose.</li></ul></section>
-</main></body></html>
+<footer>The New Cave — Biohazard: Project Genesis server guide.</footer>
+</main>
+</body>
+</html>
